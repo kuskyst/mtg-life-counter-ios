@@ -23,7 +23,7 @@ struct Counter: View {
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    self.life.left = self.life.left > 0 ? self.life.left - 1 : self.life.left
+                    if (self.life.left > 0) { self.life.left -= 1 }
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
@@ -39,7 +39,7 @@ struct Counter: View {
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    self.life.right = self.life.right > 0 ? self.life.right - 1 : self.life.right
+                    if (self.life.right > 0) { self.life.right -= 1 }
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.1))
