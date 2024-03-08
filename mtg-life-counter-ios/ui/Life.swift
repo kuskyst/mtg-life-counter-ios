@@ -17,11 +17,11 @@ struct Life: View {
             Text(String(self.life.left))
                 .frame(maxWidth:.infinity, maxHeight: .infinity)
                 .font(.system(size: 200))
-                .foregroundColor(Color.white)
+                .foregroundColor(self.life.left >= 10 ? .blue : .red)
             Text(String(self.life.right))
                 .frame(maxWidth:.infinity, maxHeight: .infinity)
                 .font(.system(size: 200))
-                .foregroundColor(Color.white)
+                .foregroundColor(self.life.right >= 10 ? .blue : .red)
         }
         .background(.black)
     }

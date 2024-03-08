@@ -16,8 +16,9 @@ struct MtgLifeCounter_iOSApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-                Life(life: $life)
-                Counter(life: $life)
+                Life(life: self.$life)
+                Counter(life: self.$life)
+                Buttons(life: self.$life)
             }
         }
     }

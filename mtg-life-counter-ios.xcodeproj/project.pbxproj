@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92FD1972B9B0F6500741F9C /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FD1962B9B0F6500741F9C /* Buttons.swift */; };
 		C9B8DA032B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA022B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift */; };
 		C9B8DA052B9AA44100CA2E0D /* Life.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA042B9AA44100CA2E0D /* Life.swift */; };
 		C9B8DA072B9AA44200CA2E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B8DA062B9AA44200CA2E0D /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C92FD1962B9B0F6500741F9C /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		C9B8D9FF2B9AA44100CA2E0D /* mtg-life-counter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mtg-life-counter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B8DA022B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MtgLifeCounter_iOSApp.swift; sourceTree = "<group>"; };
 		C9B8DA042B9AA44100CA2E0D /* Life.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				C9B8DA042B9AA44100CA2E0D /* Life.swift */,
 				C9B8DA2F2B9AAA3900CA2E0D /* Counter.swift */,
+				C92FD1962B9B0F6500741F9C /* Buttons.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92FD1972B9B0F6500741F9C /* Buttons.swift in Sources */,
 				C9B8DA332B9AB1A800CA2E0D /* LifeEntity.swift in Sources */,
 				C9B8DA052B9AA44100CA2E0D /* Life.swift in Sources */,
 				C9B8DA032B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift in Sources */,
