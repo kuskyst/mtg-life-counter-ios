@@ -1,4 +1,4 @@
-# mtg-life-counter-ios
+# mtg-life-counter-ios (wip)
 Magic:TheGathering用のライフ計算機
 
 | # | |
