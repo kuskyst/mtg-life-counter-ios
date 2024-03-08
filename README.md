@@ -1,5 +1,5 @@
-# poke-poke-dex-ios
-ポケモン図鑑 by POKEAPI 
+# mtg-life-counter-ios
+Magic:TheGathering用のライフ計算機
 
 | # | |
 | ---- | ---- |
