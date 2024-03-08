@@ -15,18 +15,15 @@ struct Life: View {
     var body: some View {
         HStack {
             Text(String(self.life.left))
-                .frame(maxWidth: .infinity,
-                       maxHeight: .infinity)
+                .frame(maxWidth:.infinity, maxHeight: .infinity)
                 .font(.system(size: 200))
                 .foregroundColor(Color.white)
             Text(String(self.life.right))
-                .frame(maxWidth: .infinity,
-                       maxHeight: .infinity)
+                .frame(maxWidth:.infinity, maxHeight: .infinity)
                 .font(.system(size: 200))
                 .foregroundColor(Color.white)
         }
         .background(.black)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

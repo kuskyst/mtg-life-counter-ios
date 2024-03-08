@@ -18,39 +18,34 @@ struct Counter: View {
                 Button( action: {
                     life.left += 1
                 }) {
-                    Text("")
-                        .frame(maxWidth:.infinity, maxHeight: .infinity)
+                    Rectangle()
+                        .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
+                        .ignoresSafeArea()
                 }
-                .frame(maxWidth:.infinity,
-                        maxHeight: .infinity)
                 Button(action: {
                     life.left -= 1
                 }) {
-                    Text("")
-                        .frame(maxWidth:.infinity, maxHeight: .infinity)
+                    Rectangle()
+                        .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
+                        .ignoresSafeArea()
                 }
-                .frame(maxWidth:.infinity, maxHeight: .infinity)
             }
-            .frame(maxWidth:.infinity,
-                   maxHeight: .infinity)
             VStack {
                 Button(action: {
                     life.right += 1
                 }) {
-                    Text("")
-                        .frame(maxWidth:.infinity, maxHeight: .infinity)
+                    Rectangle()
+                        .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
+                        .ignoresSafeArea()
                 }
-                .frame(maxWidth:.infinity,
-                    maxHeight: .infinity)
                 Button(action: {
                     life.right -= 1
                 }) {
-                    Text("")
-                        .frame(maxWidth:.infinity, maxHeight: .infinity)
+                    Rectangle()
+                        .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
+                        .ignoresSafeArea()
                 }
-                .frame(maxWidth:.infinity, maxHeight: .infinity)
             }
-            .frame(maxWidth:.infinity, maxHeight: .infinity)
         }
     }
 }
