@@ -52,5 +52,5 @@ struct Counter: View {
 
 #Preview {
     @State var previewLife = LifeEntity(date: "1", left: 20, right: 20)
-    return Counter(life: $previewLife)
+    return Counter(life: $previewLife).background(.black)
 }
