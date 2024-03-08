@@ -16,14 +16,14 @@ struct Counter: View {
         HStack {
             VStack {
                 Button( action: {
-                    life.left += 1
+                    self.life.left += 1
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    life.left -= 1
+                    self.life.left -= 1
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
@@ -32,14 +32,14 @@ struct Counter: View {
             }
             VStack {
                 Button(action: {
-                    life.right += 1
+                    self.life.right += 1
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    life.right -= 1
+                    self.life.right -= 1
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
