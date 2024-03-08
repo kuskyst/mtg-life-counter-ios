@@ -7,4 +7,4 @@ Magic:TheGathering用のライフ計算機
 | UI | SwiftUI |
 
 # Image
-![Simulator Screenshot - iPhone 15 Pro - 2024-03-08 at 17 45 13](https://github.com/kuskyst/mtg-life-counter-ios/assets/126965999/d5378793-d097-4c2d-a4c5-9037d69dd4d3)
+![Simulator Screenshot - iPhone 15 Pro - 2024-03-08 at 18 39 07](https://github.com/kuskyst/mtg-life-counter-ios/assets/126965999/395d6b79-b561-4ad4-b2e8-aedef56807b0)
