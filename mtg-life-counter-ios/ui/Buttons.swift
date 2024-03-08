@@ -11,7 +11,7 @@ import SwiftUI
 struct Buttons: View {
 
     @Binding var life: LifeEntity
-    @State private var dice = 1
+    @State private var roll = 1
     @State private var visible = false
 
     var body: some View {
@@ -29,7 +29,7 @@ struct Buttons: View {
             .padding(12.0)
             Spacer()
             if visible {
-                Image("dice\(dice)")
+                Image("dice\(roll)")
                     .renderingMode(.template)
                     .resizable()
                     .foregroundColor(Color.white)
@@ -39,7 +39,7 @@ struct Buttons: View {
             Spacer()
             Button(action: {
                 self.visible = !self.visible
-                self.dice = Int.random(in: 1..<7)
+                self.roll = Int.random(in: 1..<7)
             }) {
                 Text("dice")
                     .padding(8.0)
