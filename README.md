@@ -1,10 +1,17 @@
-# mtg-life-counter-ios
+# mtg-life-counter-ios (wip)
 Magic:TheGathering用のライフ計算機
 
 | # | |
 | ---- | ---- |
 | Language| Swift 5 |
 | UI | SwiftUI |
+
+# ToDo
+- [x] UI
+- [ ] LocalDB
+- [ ] DI
+- [ ] UnitTest
+- [ ] UITest
 
 # Demo
 ![RPReplay_Final1709895936](https://github.com/kuskyst/mtg-life-counter-ios/assets/126965999/2ed9ed05-de8d-4ff7-927c-031ae75523ee)
