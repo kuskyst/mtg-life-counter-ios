@@ -19,8 +19,7 @@ struct Counter: View {
                     life.left += 1
                 }) {
                     Text("")
-                        .frame(maxWidth:.infinity,
-                                maxHeight: .infinity)
+                        .frame(maxWidth:.infinity, maxHeight: .infinity)
                 }
                 .frame(maxWidth:.infinity,
                         maxHeight: .infinity)
@@ -28,11 +27,9 @@ struct Counter: View {
                     life.left -= 1
                 }) {
                     Text("")
-                        .frame(maxWidth:.infinity,
-                                maxHeight: .infinity)
+                        .frame(maxWidth:.infinity, maxHeight: .infinity)
                 }
-                .frame(maxWidth:.infinity,
-                        maxHeight: .infinity)
+                .frame(maxWidth:.infinity, maxHeight: .infinity)
             }
             .frame(maxWidth:.infinity,
                    maxHeight: .infinity)
@@ -41,8 +38,7 @@ struct Counter: View {
                     life.right += 1
                 }) {
                     Text("")
-                        .frame(maxWidth:.infinity,
-                                maxHeight: .infinity)
+                        .frame(maxWidth:.infinity, maxHeight: .infinity)
                 }
                 .frame(maxWidth:.infinity,
                     maxHeight: .infinity)
@@ -50,14 +46,11 @@ struct Counter: View {
                     life.right -= 1
                 }) {
                     Text("")
-                        .frame(maxWidth:.infinity,
-                              maxHeight: .infinity)
+                        .frame(maxWidth:.infinity, maxHeight: .infinity)
                 }
-                .frame(maxWidth:.infinity,
-                    maxHeight: .infinity)
+                .frame(maxWidth:.infinity, maxHeight: .infinity)
             }
-            .frame(maxWidth:.infinity,
-                   maxHeight: .infinity)
+            .frame(maxWidth:.infinity, maxHeight: .infinity)
         }
     }
 }

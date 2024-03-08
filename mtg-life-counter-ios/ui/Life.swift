@@ -26,8 +26,7 @@ struct Life: View {
                 .foregroundColor(Color.white)
         }
         .background(.black)
-        .frame(maxWidth: .infinity,
-               maxHeight: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
