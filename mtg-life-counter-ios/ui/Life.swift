@@ -1,7 +1,7 @@
 //
 //  Life.swift
 //  mtg-life-counter-ios
-//  
+//
 //  Created by kohsaka on 2024/03/01
 //
 //
@@ -29,7 +29,5 @@ struct Life: View {
 }
 
 #Preview {
-    @State var right = 20
-    @State var left = 20
     return Life(left: 20, right: 20)
 }
