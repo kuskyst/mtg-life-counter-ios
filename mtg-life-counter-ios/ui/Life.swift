@@ -1,7 +1,7 @@
 //
 //  Life.swift
 //  mtg-life-counter-ios
-//  
+//
 //  Created by kohsaka on 2024/03/01
 //
 //
@@ -10,8 +10,8 @@ import SwiftUI
 
 struct Life: View {
 
-    @AppStorage("right") private var right = 20
-    @AppStorage("left") private var left = 20
+    var left: Int
+    var right: Int
 
     var body: some View {
         HStack {
@@ -29,5 +29,5 @@ struct Life: View {
 }
 
 #Preview {
-    return Life()
+    return Life(left: 20, right: 20)
 }

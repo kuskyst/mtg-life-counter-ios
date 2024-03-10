@@ -4,8 +4,11 @@ Magic:TheGathering用のライフ計算機
 | # | |
 | ---- | ---- |
 | Language| Swift 5 |
-| UI | SwiftUI |
-| LocalDB | AppStorage |
+| Library Management | Swift Package Manager |
+| Architecture | MVVM |
+| UI | SwiftUI, Combine |
+| LocalDB | GRDB, RxGRDB |
+| etc | RxSwift |
 
 
 # ToDo
