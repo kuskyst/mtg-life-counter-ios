@@ -18,8 +18,8 @@ class LifeViewModel: ObservableObject {
     @Published var right = 20
 
     private var queue: DatabaseQueue
+    private var now: String
     private let disposeBag = DisposeBag()
-    private var now = "2099-12-31"
 
     init() {
         let df = DateFormatter()
@@ -49,7 +49,8 @@ class LifeViewModel: ObservableObject {
             try! target.insert(db)
         }.subscribe(
             onSuccess: { v in
-                self.getLife()
+                self.left = left
+                self.right = right
             },
             onFailure: { error in
                 print("error: \(error)")

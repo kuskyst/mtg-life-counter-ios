@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import RxSwift
 
 @main
 struct MtgLifeCounterApp: App {
