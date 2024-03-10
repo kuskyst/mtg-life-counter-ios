@@ -10,8 +10,8 @@ import SwiftUI
 
 struct Life: View {
 
-    @AppStorage("right") private var right = 20
-    @AppStorage("left") private var left = 20
+    var left: Int
+    var right: Int
 
     var body: some View {
         HStack {
@@ -29,5 +29,7 @@ struct Life: View {
 }
 
 #Preview {
-    return Life()
+    @State var right = 20
+    @State var left = 20
+    return Life(left: 20, right: 20)
 }

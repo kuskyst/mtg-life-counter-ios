@@ -10,21 +10,22 @@ import SwiftUI
 
 struct Counter: View {
 
-    @AppStorage("right") private var right = 20
-    @AppStorage("left") private var left = 20
+    var vm: LifeViewModel
 
     var body: some View {
         HStack {
             VStack {
                 Button( action: {
-                    self.left += 1
+                    self.vm.saveLife(
+                        left: self.vm.left + 1, right: self.vm.right)
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    if (self.left > 0) { self.left -= 1 }
+                    self.vm.saveLife(
+                        left: self.vm.left - 1, right: self.vm.right)
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
@@ -33,14 +34,16 @@ struct Counter: View {
             }
             VStack {
                 Button(action: {
-                    self.right += 1
+                    self.vm.saveLife(
+                        left: self.vm.left, right: self.vm.right + 1)
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.1))
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    if (self.right > 0) { self.right -= 1 }
+                    self.vm.saveLife(
+                        left: self.vm.left, right: self.vm.right - 1)
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.1))
@@ -52,5 +55,5 @@ struct Counter: View {
 }
 
 #Preview {
-    return Counter().background(.black)
+    return Counter(vm: LifeViewModel()).background(.black)
 }

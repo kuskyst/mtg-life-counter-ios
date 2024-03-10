@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C92FD1972B9B0F6500741F9C /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FD1962B9B0F6500741F9C /* Buttons.swift */; };
+		C953920B2B9DB82D0090E439 /* RxGRDB in Frameworks */ = {isa = PBXBuildFile; productRef = C953920A2B9DB82D0090E439 /* RxGRDB */; };
+		C953920F2B9DB8590090E439 /* LifeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953920E2B9DB8590090E439 /* LifeTable.swift */; };
+		C95392122B9DB8CA0090E439 /* LifeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95392112B9DB8CA0090E439 /* LifeViewModel.swift */; };
 		C9B8DA032B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA022B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift */; };
 		C9B8DA052B9AA44100CA2E0D /* Life.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA042B9AA44100CA2E0D /* Life.swift */; };
 		C9B8DA072B9AA44200CA2E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B8DA062B9AA44200CA2E0D /* Assets.xcassets */; };
@@ -37,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		C92FD1962B9B0F6500741F9C /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		C953920E2B9DB8590090E439 /* LifeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTable.swift; sourceTree = "<group>"; };
+		C95392112B9DB8CA0090E439 /* LifeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeViewModel.swift; sourceTree = "<group>"; };
 		C9B8D9FF2B9AA44100CA2E0D /* mtg-life-counter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mtg-life-counter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B8DA022B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MtgLifeCounter_iOSApp.swift; sourceTree = "<group>"; };
 		C9B8DA042B9AA44100CA2E0D /* Life.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C953920B2B9DB82D0090E439 /* RxGRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C953920D2B9DB84C0090E439 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				C953920E2B9DB8590090E439 /* LifeTable.swift */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		C95392102B9DB8BA0090E439 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				C95392112B9DB8CA0090E439 /* LifeViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		C9B8D9F62B9AA44100CA2E0D = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +124,8 @@
 				C9B8DA2E2B9AA8DF00CA2E0D /* asset */,
 				C9B8DA392B9ABB5600CA2E0D /* app */,
 				C9B8DA2D2B9AA8CB00CA2E0D /* ui */,
+				C953920D2B9DB84C0090E439 /* db */,
+				C95392102B9DB8BA0090E439 /* viewmodel */,
 			);
 			path = "mtg-life-counter-ios";
 			sourceTree = "<group>";
@@ -167,6 +191,9 @@
 			dependencies = (
 			);
 			name = "mtg-life-counter-ios";
+			packageProductDependencies = (
+				C953920A2B9DB82D0090E439 /* RxGRDB */,
+			);
 			productName = "mtg-life-counter-ios";
 			productReference = C9B8D9FF2B9AA44100CA2E0D /* mtg-life-counter-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -239,6 +266,9 @@
 				Base,
 			);
 			mainGroup = C9B8D9F62B9AA44100CA2E0D;
+			packageReferences = (
+				C95392092B9DB82D0090E439 /* XCRemoteSwiftPackageReference "RxGRDB" */,
+			);
 			productRefGroup = C9B8DA002B9AA44100CA2E0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,8 +313,10 @@
 			files = (
 				C92FD1972B9B0F6500741F9C /* Buttons.swift in Sources */,
 				C9B8DA052B9AA44100CA2E0D /* Life.swift in Sources */,
+				C95392122B9DB8CA0090E439 /* LifeViewModel.swift in Sources */,
 				C9B8DA032B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift in Sources */,
 				C9B8DA302B9AAA3900CA2E0D /* Counter.swift in Sources */,
+				C953920F2B9DB8590090E439 /* LifeTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +669,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C95392092B9DB82D0090E439 /* XCRemoteSwiftPackageReference "RxGRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGRDB";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C953920A2B9DB82D0090E439 /* RxGRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C95392092B9DB82D0090E439 /* XCRemoteSwiftPackageReference "RxGRDB" */;
+			productName = RxGRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9B8D9F72B9AA44100CA2E0D /* Project object */;
 }
