@@ -24,8 +24,11 @@ struct Counter: View {
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    self.vm.saveLife(
-                        left: self.vm.left - 1, right: self.vm.right)
+                    if (self.vm.left > 0) {
+                        self.vm.saveLife(
+                            left: self.vm.left - 1,
+                            right: self.vm.right)
+                    }
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
@@ -42,8 +45,11 @@ struct Counter: View {
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    self.vm.saveLife(
-                        left: self.vm.left, right: self.vm.right - 1)
+                    if (self.vm.right > 0) {
+                        self.vm.saveLife(
+                            left: self.vm.left,
+                            right: self.vm.right - 1)
+                    }
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.1))
