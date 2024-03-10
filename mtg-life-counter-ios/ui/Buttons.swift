@@ -10,16 +10,14 @@ import SwiftUI
 
 struct Buttons: View {
 
-    @AppStorage("right") private var right = 20
-    @AppStorage("left") private var left = 20
+    var vm: LifeViewModel
     @State private var roll = 1
     @State private var visible = false
 
     var body: some View {
         VStack {
             Button(action: {
-                self.left = 20
-                self.right = 20
+                self.vm.saveLife(left: 20, right: 20)
             }) {
                 Text("reset")
                     .padding(8.0)
@@ -57,5 +55,5 @@ struct Buttons: View {
 }
 
 #Preview {
-    return Buttons()
+    return Buttons(vm: LifeViewModel())
 }

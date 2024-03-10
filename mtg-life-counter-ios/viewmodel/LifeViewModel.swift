@@ -17,7 +17,7 @@ class LifeViewModel: ObservableObject {
     @Published var left = 20
     @Published var right = 20
 
-    private let queue = DatabaseQueue()
+    private var queue: DatabaseQueue
     private let disposeBag = DisposeBag()
     private var now = "2099-12-31"
 
@@ -25,7 +25,7 @@ class LifeViewModel: ObservableObject {
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd"
         self.now = df.string(from: Date())
-        LifeTable.create(self.queue)
+        self.queue = LifeDataBase.createQueue()
         self.getLife()
     }
 
@@ -34,7 +34,6 @@ class LifeViewModel: ObservableObject {
             try! LifeTable.filter(Column("date") == self.now).fetchOne(db) ?? LifeTable()
         }.subscribe(
             onSuccess: { v in
-                print(v)
                 self.left = v.left
                 self.right = v.right
             },
