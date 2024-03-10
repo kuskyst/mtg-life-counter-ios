@@ -15,7 +15,6 @@
 		C9B8DA1F2B9AA44300CA2E0D /* mtg_life_counter_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA1E2B9AA44300CA2E0D /* mtg_life_counter_iosUITests.swift */; };
 		C9B8DA212B9AA44300CA2E0D /* mtg_life_counter_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA202B9AA44300CA2E0D /* mtg_life_counter_iosUITestsLaunchTests.swift */; };
 		C9B8DA302B9AAA3900CA2E0D /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA2F2B9AAA3900CA2E0D /* Counter.swift */; };
-		C9B8DA332B9AB1A800CA2E0D /* LifeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA322B9AB1A800CA2E0D /* LifeEntity.swift */; };
 		C9B8DA382B9ABAA400CA2E0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B8DA372B9ABAA400CA2E0D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,6 @@
 		C9B8DA1E2B9AA44300CA2E0D /* mtg_life_counter_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtg_life_counter_iosUITests.swift; sourceTree = "<group>"; };
 		C9B8DA202B9AA44300CA2E0D /* mtg_life_counter_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtg_life_counter_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C9B8DA2F2B9AAA3900CA2E0D /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
-		C9B8DA322B9AB1A800CA2E0D /* LifeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEntity.swift; sourceTree = "<group>"; };
 		C9B8DA372B9ABAA400CA2E0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +101,6 @@
 			children = (
 				C9B8DA2E2B9AA8DF00CA2E0D /* asset */,
 				C9B8DA392B9ABB5600CA2E0D /* app */,
-				C9B8DA312B9AB19800CA2E0D /* entity */,
 				C9B8DA2D2B9AA8CB00CA2E0D /* ui */,
 			);
 			path = "mtg-life-counter-ios";
@@ -144,14 +141,6 @@
 				C9B8DA062B9AA44200CA2E0D /* Assets.xcassets */,
 			);
 			path = asset;
-			sourceTree = "<group>";
-		};
-		C9B8DA312B9AB19800CA2E0D /* entity */ = {
-			isa = PBXGroup;
-			children = (
-				C9B8DA322B9AB1A800CA2E0D /* LifeEntity.swift */,
-			);
-			path = entity;
 			sourceTree = "<group>";
 		};
 		C9B8DA392B9ABB5600CA2E0D /* app */ = {
@@ -293,7 +282,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C92FD1972B9B0F6500741F9C /* Buttons.swift in Sources */,
-				C9B8DA332B9AB1A800CA2E0D /* LifeEntity.swift in Sources */,
 				C9B8DA052B9AA44100CA2E0D /* Life.swift in Sources */,
 				C9B8DA032B9AA44100CA2E0D /* MtgLifeCounter_iOSApp.swift in Sources */,
 				C9B8DA302B9AAA3900CA2E0D /* Counter.swift in Sources */,

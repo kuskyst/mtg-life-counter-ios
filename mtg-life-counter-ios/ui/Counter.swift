@@ -10,20 +10,21 @@ import SwiftUI
 
 struct Counter: View {
 
-    @Binding var life: LifeEntity
+    @AppStorage("right") private var right = 20
+    @AppStorage("left") private var left = 20
 
     var body: some View {
         HStack {
             VStack {
                 Button( action: {
-                    self.life.left += 1
+                    self.left += 1
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    if (self.life.left > 0) { self.life.left -= 1 }
+                    if (self.left > 0) { self.left -= 1 }
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
@@ -32,14 +33,14 @@ struct Counter: View {
             }
             VStack {
                 Button(action: {
-                    self.life.right += 1
+                    self.right += 1
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.1))
                         .ignoresSafeArea()
                 }
                 Button(action: {
-                    if (self.life.right > 0) { self.life.right -= 1 }
+                    if (self.right > 0) { self.right -= 1 }
                 }) {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.1))
@@ -51,6 +52,5 @@ struct Counter: View {
 }
 
 #Preview {
-    @State var previewLife = LifeEntity(date: "1", left: 20, right: 20)
-    return Counter(life: $previewLife).background(.black)
+    return Counter().background(.black)
 }

@@ -11,14 +11,12 @@ import SwiftUI
 @main
 struct MtgLifeCounter_iOSApp: App {
 
-    @State private var life = LifeEntity(date: "1", left: 20, right: 20)
-
     var body: some Scene {
         WindowGroup {
             ZStack {
-                Life(life: self.$life)
-                Counter(life: self.$life)
-                Buttons(life: self.$life)
+                Life()
+                Counter()
+                Buttons()
             }
         }
     }

@@ -5,11 +5,10 @@ Magic:TheGathering用のライフ計算機
 | ---- | ---- |
 | Language| Swift 5 |
 | UI | SwiftUI |
+| LocalDB | AppStorage |
+
 
 # ToDo
-- [x] UI
-- [ ] LocalDB
-- [ ] DI
 - [ ] UnitTest
 - [ ] UITest
 

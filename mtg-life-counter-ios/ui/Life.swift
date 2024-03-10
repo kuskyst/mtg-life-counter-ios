@@ -10,24 +10,24 @@ import SwiftUI
 
 struct Life: View {
 
-    @Binding var life: LifeEntity
+    @AppStorage("right") private var right = 20
+    @AppStorage("left") private var left = 20
 
     var body: some View {
         HStack {
-            Text(String(self.life.left))
+            Text(String(self.left))
                 .frame(maxWidth:.infinity, maxHeight: .infinity)
                 .font(.system(size: 200))
-                .foregroundColor(self.life.left >= 10 ? .blue : .red)
-            Text(String(self.life.right))
+                .foregroundColor(self.left >= 10 ? .blue : .red)
+            Text(String(self.right))
                 .frame(maxWidth:.infinity, maxHeight: .infinity)
                 .font(.system(size: 200))
-                .foregroundColor(self.life.right >= 10 ? .blue : .red)
+                .foregroundColor(self.right >= 10 ? .blue : .red)
         }
         .background(.black)
     }
 }
 
 #Preview {
-    @State var previewLife = LifeEntity(date: "1", left: 20, right: 20)
-    return Life(life: $previewLife)
+    return Life()
 }
