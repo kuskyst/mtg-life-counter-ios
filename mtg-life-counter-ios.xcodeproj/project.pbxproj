@@ -12,12 +12,12 @@
 		C953920F2B9DB8590090E439 /* LifeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953920E2B9DB8590090E439 /* LifeTable.swift */; };
 		C95392122B9DB8CA0090E439 /* LifeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95392112B9DB8CA0090E439 /* LifeViewModel.swift */; };
 		C95392162B9DF11E0090E439 /* LifeDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95392152B9DF11E0090E439 /* LifeDataBase.swift */; };
+		C95392192B9FD6D60090E439 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = C95392182B9FD6D60090E439 /* ViewInspector */; };
 		C9B8DA032B9AA44100CA2E0D /* MtgLifeCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA022B9AA44100CA2E0D /* MtgLifeCounterApp.swift */; };
 		C9B8DA052B9AA44100CA2E0D /* Life.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA042B9AA44100CA2E0D /* Life.swift */; };
 		C9B8DA072B9AA44200CA2E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B8DA062B9AA44200CA2E0D /* Assets.xcassets */; };
-		C9B8DA152B9AA44200CA2E0D /* mtg_life_counter_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA142B9AA44200CA2E0D /* mtg_life_counter_iosTests.swift */; };
-		C9B8DA1F2B9AA44300CA2E0D /* mtg_life_counter_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA1E2B9AA44300CA2E0D /* mtg_life_counter_iosUITests.swift */; };
-		C9B8DA212B9AA44300CA2E0D /* mtg_life_counter_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA202B9AA44300CA2E0D /* mtg_life_counter_iosUITestsLaunchTests.swift */; };
+		C9B8DA152B9AA44200CA2E0D /* MtgLifeCounterUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA142B9AA44200CA2E0D /* MtgLifeCounterUnitTest.swift */; };
+		C9B8DA212B9AA44300CA2E0D /* MtgLifeCounterUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA202B9AA44300CA2E0D /* MtgLifeCounterUITest.swift */; };
 		C9B8DA302B9AAA3900CA2E0D /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8DA2F2B9AAA3900CA2E0D /* Counter.swift */; };
 		C9B8DA382B9ABAA400CA2E0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B8DA372B9ABAA400CA2E0D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -50,10 +50,9 @@
 		C9B8DA062B9AA44200CA2E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B8DA082B9AA44200CA2E0D /* mtg_life_counter_ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mtg_life_counter_ios.entitlements; sourceTree = "<group>"; };
 		C9B8DA102B9AA44200CA2E0D /* mtg-life-counter-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mtg-life-counter-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9B8DA142B9AA44200CA2E0D /* mtg_life_counter_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtg_life_counter_iosTests.swift; sourceTree = "<group>"; };
+		C9B8DA142B9AA44200CA2E0D /* MtgLifeCounterUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MtgLifeCounterUnitTest.swift; sourceTree = "<group>"; };
 		C9B8DA1A2B9AA44300CA2E0D /* mtg-life-counter-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mtg-life-counter-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9B8DA1E2B9AA44300CA2E0D /* mtg_life_counter_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtg_life_counter_iosUITests.swift; sourceTree = "<group>"; };
-		C9B8DA202B9AA44300CA2E0D /* mtg_life_counter_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtg_life_counter_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C9B8DA202B9AA44300CA2E0D /* MtgLifeCounterUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MtgLifeCounterUITest.swift; sourceTree = "<group>"; };
 		C9B8DA2F2B9AAA3900CA2E0D /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		C9B8DA372B9ABAA400CA2E0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95392192B9FD6D60090E439 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +117,13 @@
 			path = table;
 			sourceTree = "<group>";
 		};
+		C953921A2B9FD6E70090E439 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9B8D9F62B9AA44100CA2E0D = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +131,7 @@
 				C9B8DA132B9AA44200CA2E0D /* mtg-life-counter-iosTests */,
 				C9B8DA1D2B9AA44300CA2E0D /* mtg-life-counter-iosUITests */,
 				C9B8DA002B9AA44100CA2E0D /* Products */,
+				C953921A2B9FD6E70090E439 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,7 +160,7 @@
 		C9B8DA132B9AA44200CA2E0D /* mtg-life-counter-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				C9B8DA142B9AA44200CA2E0D /* mtg_life_counter_iosTests.swift */,
+				C9B8DA142B9AA44200CA2E0D /* MtgLifeCounterUnitTest.swift */,
 			);
 			path = "mtg-life-counter-iosTests";
 			sourceTree = "<group>";
@@ -160,8 +168,7 @@
 		C9B8DA1D2B9AA44300CA2E0D /* mtg-life-counter-iosUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C9B8DA1E2B9AA44300CA2E0D /* mtg_life_counter_iosUITests.swift */,
-				C9B8DA202B9AA44300CA2E0D /* mtg_life_counter_iosUITestsLaunchTests.swift */,
+				C9B8DA202B9AA44300CA2E0D /* MtgLifeCounterUITest.swift */,
 			);
 			path = "mtg-life-counter-iosUITests";
 			sourceTree = "<group>";
@@ -231,6 +238,9 @@
 				C9B8DA122B9AA44200CA2E0D /* PBXTargetDependency */,
 			);
 			name = "mtg-life-counter-iosTests";
+			packageProductDependencies = (
+				C95392182B9FD6D60090E439 /* ViewInspector */,
+			);
 			productName = "mtg-life-counter-iosTests";
 			productReference = C9B8DA102B9AA44200CA2E0D /* mtg-life-counter-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -249,6 +259,8 @@
 				C9B8DA1C2B9AA44300CA2E0D /* PBXTargetDependency */,
 			);
 			name = "mtg-life-counter-iosUITests";
+			packageProductDependencies = (
+			);
 			productName = "mtg-life-counter-iosUITests";
 			productReference = C9B8DA1A2B9AA44300CA2E0D /* mtg-life-counter-iosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -287,6 +299,7 @@
 			mainGroup = C9B8D9F62B9AA44100CA2E0D;
 			packageReferences = (
 				C95392092B9DB82D0090E439 /* XCRemoteSwiftPackageReference "RxGRDB" */,
+				C95392172B9FD6D60090E439 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = C9B8DA002B9AA44100CA2E0D /* Products */;
 			projectDirPath = "";
@@ -344,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B8DA152B9AA44200CA2E0D /* mtg_life_counter_iosTests.swift in Sources */,
+				C9B8DA152B9AA44200CA2E0D /* MtgLifeCounterUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B8DA212B9AA44300CA2E0D /* mtg_life_counter_iosUITestsLaunchTests.swift in Sources */,
-				C9B8DA1F2B9AA44300CA2E0D /* mtg_life_counter_iosUITests.swift in Sources */,
+				C9B8DA212B9AA44300CA2E0D /* MtgLifeCounterUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +711,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		C95392172B9FD6D60090E439 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.10;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -706,6 +726,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C95392092B9DB82D0090E439 /* XCRemoteSwiftPackageReference "RxGRDB" */;
 			productName = RxGRDB;
+		};
+		C95392182B9FD6D60090E439 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C95392172B9FD6D60090E439 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
