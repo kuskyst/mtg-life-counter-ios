@@ -27,6 +27,7 @@ struct Buttons: View {
             }
             .cornerRadius(8.0)
             .padding(12.0)
+            .accessibility(identifier: "reset")
             Spacer()
             Image("dice\(roll)")
                 .renderingMode(.template)
@@ -38,6 +39,7 @@ struct Buttons: View {
                 .rotationEffect(Angle(degrees: visible ? 360 : 0))
                 .offset(x: visible ? 0 : -50, y: visible ? 0 : -50)
                 .animation(.easeInOut(duration: 0.7), value: visible)
+                .accessibility(identifier: "dice roll")
             Spacer()
             Button(action: {
                 withAnimation { self.visible = !self.visible }
@@ -50,6 +52,7 @@ struct Buttons: View {
                     .foregroundColor(.white)
             }
             .cornerRadius(8.0)
+            .accessibility(identifier: "dice")
         }
     }
 }

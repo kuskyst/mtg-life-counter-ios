@@ -8,8 +8,8 @@ Magic:TheGathering用のライフ計算機
 | Architecture | MVVM |
 | UI | SwiftUI, Combine |
 | LocalDB | GRDB, RxGRDB |
+| Test | XCTest, ViewInspector |
 | etc | RxSwift |
-
 
 # ToDo
 - [ ] UnitTest

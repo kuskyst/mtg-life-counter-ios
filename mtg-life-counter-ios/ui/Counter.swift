@@ -22,7 +22,7 @@ struct Counter: View {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
                         .ignoresSafeArea()
-                }
+                }.accessibility(identifier: "left up")
                 Button(action: {
                     if (self.vm.left > 0) {
                         self.vm.saveLife(
@@ -33,7 +33,7 @@ struct Counter: View {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.2))
                         .ignoresSafeArea()
-                }
+                }.accessibility(identifier: "left down")
             }
             VStack {
                 Button(action: {
@@ -43,7 +43,7 @@ struct Counter: View {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.1))
                         .ignoresSafeArea()
-                }
+                }.accessibility(identifier: "right up")
                 Button(action: {
                     if (self.vm.right > 0) {
                         self.vm.saveLife(
@@ -54,7 +54,7 @@ struct Counter: View {
                     Rectangle()
                         .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.1))
                         .ignoresSafeArea()
-                }
+                }.accessibility(identifier: "right down")
             }
         }
     }
