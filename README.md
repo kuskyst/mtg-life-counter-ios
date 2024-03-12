@@ -11,10 +11,6 @@ Magic:TheGathering用のライフ計算機
 | Test | XCTest, ViewInspector |
 | etc | RxSwift |
 
-# ToDo
-- [ ] UnitTest
-- [ ] UITest
-
 # Demo
 <image width=100% src="https://github.com/kuskyst/mtg-life-counter-ios/assets/126965999/2ed9ed05-de8d-4ff7-927c-031ae75523ee">
 
